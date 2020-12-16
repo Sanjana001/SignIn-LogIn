@@ -1,9 +1,8 @@
 body{
 	overflow-x : hidden;
-	background: url('image1.jpg');
 }
 #container-fluid{
-	background: url(image1.jpg) no-repeat;
+	background: url('image1.jpg') no-repeat;
 	background-size: cover;
 }
 #header, #about, footer{
