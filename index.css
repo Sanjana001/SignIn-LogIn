@@ -2,7 +2,7 @@ body{
 	overflow-x : hidden;
 }
 #container-fluid{
-	background: url('image1.jpg') no-repeat;
+	background: url('Images/image1.jpg') no-repeat;
 	background-size: cover;
 }
 #header, #about, footer{
@@ -14,7 +14,7 @@ body{
 	margin-top: 110px;
 }
 #header{
-	background: url('image.jpg') no-repeat;
+	background: url('Images/image.jpg') no-repeat;
 	background-size: cover;
 	height: 400px;
 }
