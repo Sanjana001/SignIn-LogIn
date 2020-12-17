@@ -11,6 +11,28 @@
         <script src="index.js" type="text/javascript"></script>
 	</head>
 	<body>
+		<!--div class="bg-modal">
+			<div class="model-content">
+				<div class="modal-header">
+					<button type="button" class="close" onclick="block()">&times;</button>
+					<h2 class="text-center"><span id="sign" onclick="call('sign')" style="cursor:pointer">SignIn</span>/<span id="login" onclick="call('login')" style="cursor:pointer;text-decoration: underline;font-weight: bold">LogIn</span></h2>
+				</div>
+				<div class="modal-body">
+					<form id="form" action="login.php">
+						<label id="name"></label>
+						<span id="input"></span>
+						<label>Email:</label>
+						<input type="email" placeholder="Type your Email">
+						<label>Password:</label>
+						<input type="password" placeholder="*******">
+						<button class="btn btn-success btn-block btn-lg" id="btn">Submit</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" onclick="block()">Close</button>
+				</div>
+			</div>
+		</div-->
 		<!--button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
             <div class="modal fade" id="myModal" role="dialog">
                 <div class="modal-dialog">
@@ -28,21 +50,43 @@
                     </div>
                 </div-->
 		<nav class="navbar navbar-inverse fixed-top">
-			<div class="container-fluid">
-				<div class="navbar-header">
+			<div class="container-fluid" onmouseover= "time()">
+				<div class="navbar-header" onmouseover= "time()">
 					<a class="navbar-brand" href="index.html">LogIn/SignIn</a>
 				</div>
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav" onmouseover= "time()">
 					<li><a href="index.html" class="active">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#contact">Contact Us</a></li>
 				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#" data-toggle="modal" data-target="#myModal" onclick="call('sign')"><span class="glyphicon glyphicon-user"></span>Sign In</a></li>
+				<ul class="nav navbar-nav navbar-right" onmouseover= "time()">
+					<li><a href="#" onclick="call('sign')"><span class="glyphicon glyphicon-user"></span>Sign In</a></li>
 					<li><a href="#" data-toggle="modal" data-target="#myModal" onclick="call('login')"><span class="glyphicon glyphicon-log-in"></span>Log In</a></li>
 				</ul>
 			</div>
-			<div class="modal fade" id="myModal" role="dialog">
+			<div class="bg-modal">
+			    <div class="model-content">
+				    <div class="modal-header">
+					    <button type="button" class="close" onclick="block()">&times;</button>
+					    <h2 class="text-center"><span id="sign" onclick="call('sign')" style="cursor:pointer">SignIn</span>/<span id="login" onclick="call('login')" style="cursor:pointer;text-decoration: underline;font-weight: bold">LogIn</span></h2>
+				    </div>
+				    <div class="modal-body">
+					    <form id="form" action="login.php" method="post">
+						    <label id="name"></label>
+						    <span id="input"></span>
+						    <label>Email:</label>
+						    <input type="email" id="email" name="email" placeholder="Type your Email" onblur="checkEmail()">
+						    <label>Password:</label>
+						    <input type="password" name="pwd" placeholder="*******">
+						    <button class="btn btn-success btn-block btn-lg" id="btn">Submit</button>
+					    </form>
+				    </div>
+				    <div class="modal-footer">
+					    <button type="button" class="btn btn-default" onclick="block()">Close</button>
+				    </div>
+			    </div>
+		    </div>
+			<!--div class="modal fade" id="myModal" role="dialog" >
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -57,9 +101,9 @@
 								<input type="email" placeholder="Type your Email">
 								<label>Password:</label>
 								<input type="password" placeholder="*******">
-								<button class="btn btn-success btn-block btn-lg" id="btn">Submit</button>
+								<button class="btn btn-success btn-block btn-lg" id="btn">Submit</button-->
 								<!--input type="submit" class="btn btn-success btn-lg btn-block" value="Submit" style="margin-left: 0"-->
-							</form>
+							<!--/form-->
 							<!--form id="form" action="nothing.php">
 								<label id="name"></label>
 								<label>Email:</label>
@@ -67,37 +111,37 @@
 								<label>Password:</label>
 								<input type="password" placeholder="*******">
 							</form-->
-						</div>
+						<!--/div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="container-fluid" id="container-fluid">
+			</div-->
+			<div class="container-fluid" id="container-fluid" onmouseover= "time()">
 				<!--p style="color: orange;"><marquee behaviour="scroll" direction="left" scrollamount="10">If you are a new user then please stay tuned here for 5 minutes.</marquee></p-->
-			    <div class="container" id="header" style="margin-top: 0;width: 90%">
+			    <div class="container" id="header" style="margin-top: 0;width: 90%" onmouseover= "time()">
 			    	<p style="color: blue;"><marquee behaviour="scroll" direction="left" scrollamount="10">If you are a new user then please stay tuned here for 5 minutes.</marquee></p>
-			    	<h1 class="text-bold text-center"><span id="span"></span> Friends</h1>
+			    	<h1 class="text-bold text-center" onmouseover= "time()"><span id="span"></span> Friends</h1>
 			    	<p class="text-danger text-center">Welcome to this webpage. I hope you like it.</p>
 			    </div>
-			    <div class="container-fluid" id="about">
+			    <div class="container-fluid" id="about" onmouseover= "time()">
 			    	<h1 class="text-bold text-center" style="color: fuchsia;text-shadow: 2px 2px pink">Description</h1>
 			    	<p class="text-center text-bold">This section will tell you about this webpage.</p>
-			    	<div class="row">
+			    	<div class="row" onmouseover= "time()">
 			    		<div class="col-sm-4" id="row">
-			    			<img src="Images/about.jpg" alt="about">
+			    			<img src="about.jpg" alt="about">
 			    		</div>
 			    		<div class="col-sm-7" id="row">
 			    			<p>This is the first webpage that I am trying to make it with database. It is mainly focussed on the LogIn and SignIn forms. In this webpage I have created a database in order to handle the sign in and log in forms. Moreover I am also trying to do some operations in this webpage like to open the forms after a particular interval of time.</p>
 			    		</div>
 			    	</div>
 			    </div>
-			    <footer id="contact">
+			    <footer id="contact" onmouseover= "time()">
 			    	<h1 class="text-bold text-center" style="color: fuchsia;text-shadow: 2px 2px pink">Contact Info</h1>
-			    	<p class="text-center">This section contains the contact information.</p>
-			    	<p style="font-size: 20px;margin-top: 25px;" id="p">If you have any question regarding this page then feel free to ask your queries. Following are some our's pages where you can post your queries.</p>
-			    	<ul class="list-inline">
+			    	<p class="text-center" onmouseover= "time()">This section contains the contact information.</p>
+			    	<p style="font-size: 20px;margin-top: 25px;" id="p" onmouseover= "time()">If you have any question regarding this page then feel free to ask your queries. Following are some our's pages where you can post your queries.</p>
+			    	<ul class="list-inline" onmouseover= "time()">
 			    		<li><a href="www.facebook.com" style="padding-left: 50px;"><img src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-facebook-2019-circle-512.png" width="30" height="30"></a></li>
 			    		<li><a href="www.twitter.com" style="padding-left: 50px;"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" width="30" height="30"></a></li>
 			    		<li><a href="www.gmail.com" style="padding-left: 50px;"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-circular-color/512/gmail-512.png" width="30" height="30"></a></li>
@@ -112,6 +156,7 @@
 		var str = "";
         var date = new Date();
         var hours = date.getHours();
+        var min = date.getMinutes();
         if(hours<12) str += "Good Morning";
         else if(hours>=12 && hours<16) str += "Good Afternoon";
         else str += "Good Evening";
