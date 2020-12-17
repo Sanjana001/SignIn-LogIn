@@ -61,7 +61,7 @@ ul img{
 	height: 40px;
 	width: 40px;
 }
-#myModal h2{
+#sign, #login{
 	color: green;
 }
 form{
@@ -82,4 +82,26 @@ input{
 #form #btn{
 	margin-top: 20px;
 	width: 80%;
+}
+.bg-modal{
+	width: 100%;
+	position: absolute;
+	display: none;
+	justify-content: center;
+}
+.model-content{
+	margin-top: 30px;
+	width: 100%;
+	height: 500px;
+	background-color: white;
+	border-radius: 4px;
+}
+@media only screen and (min-width: 1400px) {
+  .model-content{
+	margin-top: 30px;
+	width: 40%;
+	height: 500px;
+	background-color: white;
+	border-radius: 4px;
+  }
 }
