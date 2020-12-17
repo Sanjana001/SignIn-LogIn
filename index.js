@@ -50,7 +50,9 @@ function time(){
 function checkName(){
    var name = document.getElementById("text").value;
    var regix = /[A-Za-z]$/;
-   if(!regix.test(name)) alert("Wrong Format");
+   if(!regix.test(name)){
+	   alert("Wrong Format");
+   }
 }
 function checkEmail(){
    var email = document.getElementById("email").value;
