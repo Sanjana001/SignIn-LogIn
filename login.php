@@ -9,13 +9,8 @@
    if($conn->connect_error) 
    	die("Error in connecting to the database: ".$conn->connect_error);
    $sql = "SELECT sr_no, name, email, pwd FROM account";
-   /*$stmt = $conn->prepare("INSERT INTO account(name,email,pwd) VALUES(?,?,?)");
-   $stmt->bind_param("sss",$name,$email,$pwd);*/
-   //$name = $_POST['name'];
    $email = $_POST['email'];
    $pwd = $_POST['pwd'];
-   /*$email = "sanj@gmail.com";
-   $pwd = "so";*/
    $name = "";
    $result = $conn->query($sql);
    if($result->num_rows > 1){
