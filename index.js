@@ -46,6 +46,11 @@ function time(){
    	   counter++;
    	   mins = min1;
    }
+   else if(diff<0 && diff1>=mins-arr[counter]){
+	   document.querySelector('.bg-modal').style.display = 'flex';
+   	   counter++;
+   	   mins = min1;
+   }
 }
 function checkName(){
    var name = document.getElementById("text").value;
