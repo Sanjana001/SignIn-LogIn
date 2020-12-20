@@ -40,6 +40,7 @@ function time(){
    var hr1 = date1.getHours();
    var min1 = date1.getMinutes();
    var diff = min1 - mins;
+   var diff1 = 0 - diff;
    if(diff>0 && diff>=arr[counter]){
    	   document.querySelector('.bg-modal').style.display = 'flex';
    	   counter++;
