@@ -42,7 +42,6 @@ function time(){
    var diff = min1 - mins;
    if(diff>0 && diff>=arr[counter]){
    	   document.querySelector('.bg-modal').style.display = 'flex';
-   	   //alert(diff);
    	   counter++;
    	   mins = min1;
    }
